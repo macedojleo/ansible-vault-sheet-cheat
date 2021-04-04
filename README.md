@@ -1,6 +1,8 @@
 Encrypting files 
 ----------------
 
+## Ansible Vault encrypts variables and files so you can protect sensitive content such as passwords or keys rather than leaving it visible as plaintext in playbooks or roles.
+
 |     Comments  | Command | 
 |    :---:     |     :---:   |
 | Create Encrypted File  | $ ansible-vault create file.yaml |
@@ -11,4 +13,6 @@ Encrypting files
 | Decrypt Encrypted File | $ ansible-vault decrypt filename.txt |
 | Decrypt Encrypted File | $ ansible-vault decrypt filename.txt |
 | Encrypt string   | $ ansible-vault encrypt_string 'string' --name 'variable_name' |
-| Decrypting Encrypted File During Ansible Runtime  | $ ansible-playbook launch.yml --ask-vault-pass | 
+| Decrypt Encrypted File During Ansible Runtime  | $ ansible-playbook launch.yml --ask-vault-pass | 
+| Decrypt Encrypted File During Ansible Runtime Avoiding the prompt password  | $ ansible-playbook launch.yml --vault-password-file ~/ .vault_pass.txt | 
+| Decrypt Encrypted File During Ansible Runtime Avoiding the prompt password  | $ ansible-playbook launch.yml --vault-password-file ~/ .vault_pass.txt |
