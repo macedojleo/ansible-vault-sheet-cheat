@@ -1,7 +1,9 @@
-Encrypting files 
+Ansible-vault Encrypting Files and/or variables
 ----------------
 
-## Ansible Vault encrypts variables and files so you can protect sensitive content such as passwords or keys rather than leaving it visible as plaintext in playbooks or roles.
+#### Ansible Vault encrypts variables and files so you can protect sensitive content such as passwords or keys rather than leaving it visible as plaintext in playbooks or roles.
+
+- Sheet Cheat
 
 |     Comments  | Command | 
 |    :---:     |     :---:   |
